@@ -23,7 +23,7 @@ const PersonalInformation = () => {
     });
     
     useEffect(() => {
-        fetch(`${process.env.REACT_APP_URL_API}personalInformation/${id}`)
+        fetch(`http://localhost:5000/personalInformation/${id}`)
             .then(res => res.json())
             .then(personal => {
                 setData(personal);

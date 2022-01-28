@@ -23,7 +23,7 @@ const Skill = () => {
     useEffect(() => {
         if(id)
         {
-            fetch(`${process.env.REACT_APP_URL_API}skills/${id}`)
+            fetch(`http://localhost:5000/skills/${id}`)
                 .then(res => res.json())
                 .then(skills => {
                     setData(skills);

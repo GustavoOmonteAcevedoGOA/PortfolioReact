@@ -1,6 +1,6 @@
 const SendDelete = (endpoint, data) => {
 
-    fetch(`${process.env.REACT_APP_URL_API}${endpoint}/${data}`, {
+    fetch(`http://localhost:5000/${endpoint}/${data}`, {
         method: 'DELETE'
     })
         .then( resp => resp.json())

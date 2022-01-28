@@ -6,7 +6,7 @@ const PersonalInformation = () => {
     
     const [data,setData]= useState([]);
     const { user } = useContext(UserContext);
-    let url=`${process.env.REACT_APP_URL_API}personalInformation`;
+    let url='http://localhost:5000/personalInformation';
 
     useEffect(() => {
         fetch(url)

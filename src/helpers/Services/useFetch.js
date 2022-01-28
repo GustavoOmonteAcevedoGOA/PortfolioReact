@@ -6,7 +6,7 @@ const useFetch = endpoint => {
     const [ error, setError ] = useState();
     
     useEffect( () => {
-        get(`${process.env.REACT_APP_URL_API}${endpoint}`)
+        get(`http://localhost:5000/${endpoint}`)
             .then( ( { data } ) => setData(data))
             .catch( err => setError(err));
     }, [ endpoint ] );

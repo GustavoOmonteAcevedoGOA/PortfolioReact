@@ -23,7 +23,7 @@ const WorkExpirience = () => {
     });
 
     useEffect(() => {
-        fetch(`${process.env.REACT_APP_URL_API}workExpirience/${id}`)
+        fetch(`http://localhost:5000/workExpirience/${id}`)
             .then(res => res.json())
             .then(workExpi => {
                 setData(workExpi);

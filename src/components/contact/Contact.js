@@ -8,7 +8,7 @@ const Contact = () => {
 
     const [data,setData]= useState([]);
     const { user } = useContext(UserContext);
-    let url=`${process.env.REACT_APP_URL_API}contact`;
+    let url='http://localhost:5000/contact';
 
     useEffect(() => {
         fetch(url)

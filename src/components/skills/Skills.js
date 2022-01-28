@@ -8,7 +8,7 @@ const Skills = () => {
   
     const [data,setData]= useState([]);
     const { user } = useContext(UserContext);
-    let url=`${process.env.REACT_APP_URL_API}skills`;
+    let url='http://localhost:5000/skills';
 
     useEffect(() => {
         fetch(url)

@@ -1,6 +1,6 @@
 const SendPost = (data,endpoint) => {
 
-    fetch(`${process.env.REACT_APP_URL_API}${endpoint}`, {
+    fetch(`http://localhost:5000/${endpoint}`, {
         method: 'POST',
         headers: { 
             'Content-Type': 'application/json'

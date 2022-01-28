@@ -8,7 +8,7 @@ const WorkExperience = () => {
 
     const [data,setData]= useState([]);
     const { user } = useContext(UserContext);
-    let url=`${process.env.REACT_APP_URL_API}workExpirience`;
+    let url='http://localhost:5000/workExpirience';
 
     useEffect(() => {
         fetch(url)

@@ -1,6 +1,6 @@
 const SendPut = (data,endpoint) => {
 
-    fetch(`${process.env.REACT_APP_URL_API}${endpoint}/${data.id}`, {
+    fetch(`http://localhost:5000/${endpoint}/${data.id}`, {
         method: 'PUT',
         headers: { 
             'Content-Type': 'application/json'

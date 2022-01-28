@@ -8,7 +8,7 @@ const Portfolio = () => {
 
     const [data,setData]= useState([]);
     const { user } = useContext(UserContext);
-    let url=`${process.env.REACT_APP_URL_API}portfolio`;
+    let url='http://localhost:5000/portfolio';
 
     useEffect(() => {
         fetch(url)

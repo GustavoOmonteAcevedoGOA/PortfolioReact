@@ -13,7 +13,7 @@ const Administrator = () => {
     function handleChangePassword(e) {
         setPasswordInput(e.target.value);
     }
-    let url=`${process.env.REACT_APP_URL_API}admin`;
+    let url='http://localhost:5000/admin';
 
     useEffect(() => {
         fetch(url)

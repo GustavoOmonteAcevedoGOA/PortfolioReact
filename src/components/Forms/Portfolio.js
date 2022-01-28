@@ -27,7 +27,7 @@ const Portfolio = () => {
     };
     
     useEffect(() => {
-        fetch(`${process.env.REACT_APP_URL_API}portfolio/${id}`)
+        fetch(`http://localhost:5000/portfolio/${id}`)
             .then(res => res.json())
             .then(portfolio => {
                 setData(portfolio);
