@@ -32,11 +32,13 @@ const Header = () => {
 
             <nav className="navbar">
                 <ul>
-                    <NavLink to="/Administrator"><FontAwesomeIcon icon={ faIdCard } />
-                                Admin
-                    </NavLink>
                     <li>
                         <NavLink to="/"><FontAwesomeIcon icon={ faHome } />  Home</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/Administrator"><FontAwesomeIcon icon={ faIdCard } />
+                                    Admin
+                        </NavLink>
                     </li>
                     <li>
                         <NavLink to="/workexperience"><FontAwesomeIcon icon={ faBriefcase } />
