@@ -33,9 +33,9 @@ const Skills = () => {
                 <div className="content">
                     <div className="info grid-skill">
                         {
-                            (data)?data.map( skills => {
+                            (data)?data.map( (skills,index) => {
                                 return <SkillsCard 
-                                    key = { Date.now }
+                                    key = { index }
                                     id = { skills.id } 
                                     skill = { skills.skill}
                                     punctuation = {skills.punctuation}

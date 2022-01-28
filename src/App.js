@@ -31,7 +31,7 @@ function App() {
                         <Route path="/formWorkExpirience" element={<WorkExperienceForm/>} exact></Route>
                         <Route path="/workexperience" element={<WorkExperience/>} exact></Route>
                         <Route path="/portfolio" element={<Portfolio/>} exact></Route>
-                        <Route path="/formSkills" element={<Skills />} exact></Route>
+                        <Route path="/Skills" element={<Skills />} exact></Route>
                         <Route path="/contact" element={<Contact />} exact></Route>
                         <Route path="/messages" element={<Messages />} exact></Route>
                         <Route path="/administrator" element={<Administrator />} exact></Route>

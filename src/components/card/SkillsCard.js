@@ -29,7 +29,7 @@ const SkillsCard = ({ id, skill, punctuation, userState }) => {
                         const keys = index + skill; 
                         return (punctuation - 1 < index)?
                             <SkillRange key = { keys } id={punctuation} skillStyle='empty'/>
-                            :<SkillRange key = { keys } id={punctuation} skillStyle={skill}/>;                       
+                            :<SkillRange key = { keys } id={punctuation} skillStyle={skill}/>;
                     })
                 }
             </div>
