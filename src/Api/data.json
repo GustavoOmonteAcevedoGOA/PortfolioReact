@@ -1,0 +1,167 @@
+{
+  "header": [
+    {
+      "id": 1,
+      "name": "Daniel Vela",
+      "occupation": "front end developer"
+    }
+  ],
+  "personalInformation": [
+    {
+      "id": 101,
+      "name": "Daniel Velas",
+      "occupation": "front end developer",
+      "description": "a web developer, I translate your ideas into a website in unique way. I handle several tools which allow a more efficient work and I have skills with which you can trust me and my work.",
+      "hobby": "play games, clash royal",
+      "language": "Spanish-English-frech"
+    }
+  ],
+  "portfolio": [
+    {
+      "id": 201,
+      "title": "Uber App Express",
+      "link": "www.github.com",
+      "imagen": "https://www.yext.co.uk/wp-content/uploads/sites/4/2016/09/resources-blog-Uber_US-2.png"
+    },
+    {
+      "id": 202,
+      "title": "Hospital RRHH",
+      "link": "www.github.com",
+      "imagen": "https://www.openinnova.es/wp-content/uploads/2018/05/Odoo-Mejor-Software-Gesti%C3%B3n-Recursos-Humanos-HRMS-Openinova1-1024x478.png"
+    },
+    {
+      "id": 203,
+      "title": "Travel Tour",
+      "link": "www.github.com",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR6kyg9wIHZaWv6i309f5dUi_o0wHjfhJWgAbDm1sO1Mp3SMr9ksxPNnBZAasTvBGhRgY&usqp=CAU"
+    },
+    {
+      "id": 204,
+      "title": "Store Software",
+      "link": "www.github.com",
+      "imagen": "https://i.ytimg.com/vi/QeamuGFY9bw/maxresdefault.jpg"
+    }
+  ],
+  "workExpirience": [
+    {
+      "id": 304,
+      "title": "BootCamp Udemy 2021",
+      "occupation": "Trainer",
+      "description": "This allows me to save time although it is not what I use the most, I know enough to recommend it for when you start.",
+      "date": "March-2021 - July-2021"
+    },
+    {
+      "id": 305,
+      "title": "BootCamp Udemy PYTHON",
+      "post": "Trainer",
+      "description": "I do not use this language 100% but it allows me to give solutions to problems that seem complicated.",
+      "date": "March-2021 - July-2021"
+    },
+    {
+      "id": 306,
+      "title": "BootCamp Platzi",
+      "post": "Trainer",
+      "description": "I can develop and interpret a website with this language in its entirety and add all the necessary content.",
+      "date": "March-2021 - July-2021"
+    },
+    {
+      "id": 307,
+      "title": "New Work Experience",
+      "occupation": "new occupation",
+      "description": "description",
+      "date": "2021 - 2022"
+    }
+  ],
+  "skills": [
+    {
+      "id": 401,
+      "skill": "REACT JS",
+      "punctuation": "1"
+    },
+    {
+      "id": 402,
+      "skill": "HTML",
+      "punctuation": 5
+    },
+    {
+      "id": 403,
+      "skill": "JavaScript",
+      "punctuation": 2
+    },
+    {
+      "id": 404,
+      "skill": "PHP",
+      "punctuation": 1
+    },
+    {
+      "id": 405,
+      "skill": "C++",
+      "punctuation": 1
+    },
+    {
+      "id": 406,
+      "skill": "CSS",
+      "punctuation": 1
+    },
+    {
+      "id": 407,
+      "skill": "SQL Server",
+      "punctuation": 1
+    },
+    {
+      "id": 408,
+      "skill": "Go ",
+      "punctuation": "5"
+    },
+    {
+      "id": 409,
+      "skill": "ingles",
+      "punctuation": "4"
+    },
+    {
+      "id": 410,
+      "skill": "Go 2",
+      "punctuation": "3"
+    }
+  ],
+  "admin": {
+    "id": 501,
+    "user": "admin",
+    "password": "password123"
+  },
+  "contact": [
+    {
+      "id": 601,
+      "location": "Cochabamba",
+      "country": "Bolivia",
+      "email": "daniel@example.com",
+      "phone": "+183 555 33333"
+    }
+  ],
+  "emails": [
+    {
+      "id": 701,
+      "subject": "Leo",
+      "email": "Leo@gmail.com",
+      "content": "Lo invitamos a participar en la convocatoria el 4 de noviembre de 2022 en el ambiente Hotel Real de Santa Cruz en la dirección de Novosibirsk, UL. Decembristas D.34, entrada desde el final del edificio, donde usted podra presentar sus ideas y ser parte de nuestra empresa donde compartimos conocimiento."
+    },
+    {
+      "id": 702,
+      "subject": "Leo2",
+      "email": "Leo@gmail.com",
+      "content": "Para que este documento realice su funcion correctamente, es necesario asegurarse de una cantidad suficiente de informacion. La informacion debe ser un volumen de este tipo para que el destinatario no tenga preguntas con respecto al evento planificado, el lugar y la hora de ella. Para asegurarse de que se le envie la invitacion, debe especificar los datos en el destinatario. Normalmente, esta informacion se coloca en la esquina superior derecha de la letra de la letra en los deberes. Si esta es una organizacion, entonces se escribe su nombre y su ubicacion"
+    },
+    {
+      "id": 703,
+      "subject": "Leo3",
+      "email": "Leo@gmail.com",
+      "content": "El principal riesgo de oferta de trabajo para el empleador radica en el hecho de que, como ya se menciono, el empleado que se le nego el lugar puede ir a la corte, y el tribunal considerara la invitacion inofensiva a los presos del contrato laboral. En consecuencia, ya en la etapa de escribir la carta, deben evitarse los factores, lo que le dara similitud con el contrato. Esto, en primer lugar, las firmas tanto del empleador como del empleado en la carta, en segundo lugar, las condiciones obligatorias contenidas en la carta de inclusion en el contrato de empleo (ver Art. 57 del Codigo de Trabajo de la Federacion de Rusia)."
+    },
+    {
+      "id": 704,
+      "subject": "reerrerer",
+      "email": "ererererer@sdsdssdssdssd.sdsd",
+      "content": "ssdsdsdsdsdfsdfdsfsdfsd"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+.circle {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid var(--color);
+    margin-right: 4rem;
+    margin-top: 2rem;
+  }
+  .full {
+    background-color: var(--color);
+  }
+  .empty {
+    background-color: #ffffff;
+    border: none;
+  }
+
+  .knowledge{
+    display: flex;
+    
+  }
+  .title-skill{
+    display: inline-block
+  }
+  .grid-skill{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4rem;
+    column-gap:3rem;
+  }
+  .rows-skill{
+    border: 1px solid #969393;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 5px 2px 1px 1px gray;
+  }
