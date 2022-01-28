@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
 import UserContext from '../../context/UserContext';
-import helpHttp from '../../helpers/helpHttp';
 import './app.css';
 
 const Administrator = () => {
@@ -14,20 +13,15 @@ const Administrator = () => {
     function handleChangePassword(e) {
         setPasswordInput(e.target.value);
     }
-    let api= helpHttp();
-    let url='http://localhost:5000/admin';
+    let url=`${process.env.REACT_APP_URL_API}admin`;
 
     useEffect(() => {
-        api.get(url)
-            .then((res) =>{
-                if (!res.err) {
-                    setData(res);
-              
-                } else{
-                    setData(null);
-                }
+        fetch(url)
+            .then(res => res.json())
+            .then(admin => {
+                setData(admin);
             });
-    }, [url]);
+    }, []);
 
     function handleSubmit(e) {
         e.preventDefault();
