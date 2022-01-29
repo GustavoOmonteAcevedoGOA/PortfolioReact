@@ -6,7 +6,7 @@ const useFetch = endpoint => {
     const [ error, setError ] = useState();
     
     useEffect( () => {
-        get(`http://localhost:5000/${endpoint}`)
+        get(`https://task-tracker-backend-master.herokuapp.com/${endpoint}`)
             .then( ( { data } ) => setData(data))
             .catch( err => setError(err));
     }, [ endpoint ] );

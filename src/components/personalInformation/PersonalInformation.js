@@ -6,7 +6,7 @@ const PersonalInformation = () => {
     
     const [data,setData]= useState([]);
     const { user } = useContext(UserContext);
-    let url='http://localhost:5000/personalInformation';
+    let url='https://task-tracker-backend-master.herokuapp.com/personalInformation';
 
     useEffect(() => {
         fetch(url)

@@ -1,6 +1,6 @@
 const SendPost = (data,endpoint) => {
 
-    fetch(`http://localhost:5000/${endpoint}`, {
+    fetch(`https://task-tracker-backend-master.herokuapp.com/${endpoint}`, {
         method: 'POST',
         headers: { 
             'Content-Type': 'application/json'

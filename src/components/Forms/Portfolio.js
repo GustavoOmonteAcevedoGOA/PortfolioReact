@@ -27,7 +27,7 @@ const Portfolio = () => {
     };
     
     useEffect(() => {
-        fetch(`http://localhost:5000/portfolio/${id}`)
+        fetch(`https://task-tracker-backend-master.herokuapp.com/portfolio/${id}`)
             .then(res => res.json())
             .then(portfolio => {
                 setData(portfolio);

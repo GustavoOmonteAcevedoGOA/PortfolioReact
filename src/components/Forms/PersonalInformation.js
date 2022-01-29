@@ -23,7 +23,7 @@ const PersonalInformation = () => {
     });
     
     useEffect(() => {
-        fetch(`http://localhost:5000/personalInformation/${id}`)
+        fetch(`https://task-tracker-backend-master.herokuapp.com/personalInformation/${id}`)
             .then(res => res.json())
             .then(personal => {
                 setData(personal);

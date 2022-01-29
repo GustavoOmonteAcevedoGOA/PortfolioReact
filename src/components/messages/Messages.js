@@ -7,7 +7,7 @@ const Messages = () => {
     const [data, setData]= useState([]);   
 
     useEffect(() => {
-        fetch('http://localhost:5000/emails')
+        fetch('https://task-tracker-backend-master.herokuapp.com/emails')
             .then(res => res.json())
             .then(contact => {
                 setData(contact);

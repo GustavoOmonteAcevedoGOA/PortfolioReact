@@ -8,7 +8,7 @@ const Skills = () => {
   
     const [data,setData]= useState([]);
     const { user } = useContext(UserContext);
-    let url='http://localhost:5000/skills';
+    let url='https://task-tracker-backend-master.herokuapp.com/skills';
 
     useEffect(() => {
         fetch(url)

@@ -1,6 +1,6 @@
 const SendDelete = (endpoint, data) => {
 
-    fetch(`http://localhost:5000/${endpoint}/${data}`, {
+    fetch(`https://task-tracker-backend-master.herokuapp.com/${endpoint}/${data}`, {
         method: 'DELETE'
     })
         .then( resp => resp.json())

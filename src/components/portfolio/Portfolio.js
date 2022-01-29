@@ -8,7 +8,7 @@ const Portfolio = () => {
 
     const [data,setData]= useState([]);
     const { user } = useContext(UserContext);
-    let url='http://localhost:5000/portfolio';
+    let url='https://task-tracker-backend-master.herokuapp.com/portfolio';
 
     useEffect(() => {
         fetch(url)

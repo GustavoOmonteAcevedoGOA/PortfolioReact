@@ -8,7 +8,7 @@ const WorkExperience = () => {
 
     const [data,setData]= useState([]);
     const { user } = useContext(UserContext);
-    let url='http://localhost:5000/workExpirience';
+    let url='https://task-tracker-backend-master.herokuapp.com/workExpirience';
 
     useEffect(() => {
         fetch(url)

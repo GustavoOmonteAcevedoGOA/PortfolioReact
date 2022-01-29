@@ -23,7 +23,7 @@ const WorkExpirience = () => {
     });
 
     useEffect(() => {
-        fetch(`http://localhost:5000/workExpirience/${id}`)
+        fetch(`https://task-tracker-backend-master.herokuapp.com/workExpirience/${id}`)
             .then(res => res.json())
             .then(workExpi => {
                 setData(workExpi);

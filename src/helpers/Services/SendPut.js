@@ -1,6 +1,6 @@
 const SendPut = (data,endpoint) => {
 
-    fetch(`http://localhost:5000/${endpoint}/${data.id}`, {
+    fetch(`https://task-tracker-backend-master.herokuapp.com/${endpoint}/${data.id}`, {
         method: 'PUT',
         headers: { 
             'Content-Type': 'application/json'

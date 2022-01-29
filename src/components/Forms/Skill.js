@@ -23,7 +23,7 @@ const Skill = () => {
     useEffect(() => {
         if(id)
         {
-            fetch(`http://localhost:5000/skills/${id}`)
+            fetch(`https://task-tracker-backend-master.herokuapp.com/skills/${id}`)
                 .then(res => res.json())
                 .then(skills => {
                     setData(skills);

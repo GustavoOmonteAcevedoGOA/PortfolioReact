@@ -13,7 +13,7 @@ const Administrator = () => {
     function handleChangePassword(e) {
         setPasswordInput(e.target.value);
     }
-    let url='http://localhost:5000/admin';
+    let url='https://task-tracker-backend-master.herokuapp.com/admin';
 
     useEffect(() => {
         fetch(url)
