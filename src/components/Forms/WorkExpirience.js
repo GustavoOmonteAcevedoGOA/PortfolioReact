@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { LinkToJsonServer } from '../../Api/ConnectionToJsonServer';
 import SendPost from '../../helpers/Services/SendPost';
 import SendPut from '../../helpers/Services/SendPut';
 import Form from './components/Form';
@@ -23,7 +24,7 @@ const WorkExpirience = () => {
     });
 
     useEffect(() => {
-        fetch(`https://task-tracker-backend-master.herokuapp.com/workExpirience/${id}`)
+        fetch(`${LinkToJsonServer}workExpirience/${id}`)
             .then(res => res.json())
             .then(workExpi => {
                 setData(workExpi);

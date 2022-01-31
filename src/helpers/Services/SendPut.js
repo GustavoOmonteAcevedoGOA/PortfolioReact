@@ -1,6 +1,8 @@
+import { LinkToJsonServer } from '../../Api/ConnectionToJsonServer';
+
 const SendPut = (data,endpoint) => {
 
-    fetch(`https://task-tracker-backend-master.herokuapp.com/${endpoint}/${data.id}`, {
+    fetch(`${LinkToJsonServer}${endpoint}/${data.id}`, {
         method: 'PUT',
         headers: { 
             'Content-Type': 'application/json'

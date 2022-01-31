@@ -3,12 +3,13 @@ import './app.css';
 import SkillsCard from '../card/SkillsCard';
 import UserContext from '../../context/UserContext';
 import { NavLink } from 'react-router-dom';
+import { LinkToJsonServer } from '../../Api/ConnectionToJsonServer';
 
 const Skills = () => {
   
     const [data,setData]= useState([]);
     const { user } = useContext(UserContext);
-    let url='https://task-tracker-backend-master.herokuapp.com/skills';
+    let url=`${LinkToJsonServer}skills`;
 
     useEffect(() => {
         fetch(url)

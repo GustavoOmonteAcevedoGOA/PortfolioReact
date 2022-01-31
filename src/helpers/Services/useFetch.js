@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
 import { get } from 'axios';
+import { LinkToJsonServer } from '../../Api/ConnectionToJsonServer';
 
 const useFetch = endpoint => {
     const [ data, setData] = useState();
     const [ error, setError ] = useState();
     
     useEffect( () => {
-        get(`https://task-tracker-backend-master.herokuapp.com/${endpoint}`)
+        get(`${LinkToJsonServer}${endpoint}`)
             .then( ( { data } ) => setData(data))
             .catch( err => setError(err));
     }, [ endpoint ] );

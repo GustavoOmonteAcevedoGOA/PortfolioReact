@@ -1,6 +1,8 @@
+import { LinkToJsonServer } from '../../Api/ConnectionToJsonServer';
+
 const SendGet = async (endpoint) => {
 
-    const getData = await fetch(`https://task-tracker-backend-master.herokuapp.com/${endpoint}`, {
+    const getData = await fetch(`${LinkToJsonServer}${endpoint}`, {
         method: 'GET'})
         .then( async resp => await resp.json())
         .catch( error => console.log(error));

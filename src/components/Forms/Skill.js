@@ -6,6 +6,7 @@ import Form from './components/Form';
 import Input from './components/Input';
 import Select from './components/Select';
 import Submit from './components/Submit';
+import { LinkToJsonServer } from '../../Api/ConnectionToJsonServer';
 
 const Skill = () => {
 
@@ -23,7 +24,7 @@ const Skill = () => {
     useEffect(() => {
         if(id)
         {
-            fetch(`https://task-tracker-backend-master.herokuapp.com/skills/${id}`)
+            fetch(`${LinkToJsonServer}skills/${id}`)
                 .then(res => res.json())
                 .then(skills => {
                     setData(skills);

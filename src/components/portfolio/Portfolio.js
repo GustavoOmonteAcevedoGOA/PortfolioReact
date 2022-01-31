@@ -3,12 +3,13 @@ import UserContext from '../../context/UserContext';
 import PorfolioCard from '../card/PortfoliCard';
 import { NavLink } from 'react-router-dom';
 import './app.css';
+import { LinkToJsonServer } from '../../Api/ConnectionToJsonServer';
 
 const Portfolio = () => {
 
     const [data,setData]= useState([]);
     const { user } = useContext(UserContext);
-    let url='https://task-tracker-backend-master.herokuapp.com/portfolio';
+    let url=`${LinkToJsonServer}portfolio`;
 
     useEffect(() => {
         fetch(url)

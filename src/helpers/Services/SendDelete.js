@@ -1,6 +1,8 @@
+import { LinkToJsonServer } from '../../Api/ConnectionToJsonServer';
+
 const SendDelete = (endpoint, data) => {
 
-    fetch(`https://task-tracker-backend-master.herokuapp.com/${endpoint}/${data}`, {
+    fetch(`${LinkToJsonServer}${endpoint}/${data}`, {
         method: 'DELETE'
     })
         .then( resp => resp.json())

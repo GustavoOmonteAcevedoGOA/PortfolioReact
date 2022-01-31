@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { LinkToJsonServer } from '../../Api/ConnectionToJsonServer';
 import MessageCard from '../card/MessageCard';
 import './app.css';
 
@@ -7,7 +8,7 @@ const Messages = () => {
     const [data, setData]= useState([]);   
 
     useEffect(() => {
-        fetch('https://task-tracker-backend-master.herokuapp.com/emails')
+        fetch(`${LinkToJsonServer}emails`)
             .then(res => res.json())
             .then(contact => {
                 setData(contact);

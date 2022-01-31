@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { NavLink} from 'react-router-dom';
+import { LinkToJsonServer } from '../../Api/ConnectionToJsonServer';
 import UserContext from '../../context/UserContext';
 import WorkexpirienceCard from '../card/WorkExpirienceCard';
 import './app.css';
@@ -8,7 +9,7 @@ const WorkExperience = () => {
 
     const [data,setData]= useState([]);
     const { user } = useContext(UserContext);
-    let url='https://task-tracker-backend-master.herokuapp.com/workExpirience';
+    let url=`${LinkToJsonServer}workExpirience`;
 
     useEffect(() => {
         fetch(url)

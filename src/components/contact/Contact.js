@@ -3,12 +3,13 @@ import UserContext from '../../context/UserContext';
 import ContactForm from '../Forms/Contact';
 import ContactCard from '../card/ContactCard';
 import './app.css';
+import { LinkToJsonServer } from '../../Api/ConnectionToJsonServer';
 
 const Contact = () => {
 
     const [data,setData]= useState([]);
     const { user } = useContext(UserContext);
-    let url='https://task-tracker-backend-master.herokuapp.com/contact';
+    let url=`${LinkToJsonServer}contact`;
 
     useEffect(() => {
         fetch(url)

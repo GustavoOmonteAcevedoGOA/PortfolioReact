@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
+import { LinkToJsonServer } from '../../Api/ConnectionToJsonServer';
 import UserContext from '../../context/UserContext';
 import './app.css';
 
@@ -13,7 +14,7 @@ const Administrator = () => {
     function handleChangePassword(e) {
         setPasswordInput(e.target.value);
     }
-    let url='https://task-tracker-backend-master.herokuapp.com/admin';
+    let url=`${LinkToJsonServer}admin`;
 
     useEffect(() => {
         fetch(url)

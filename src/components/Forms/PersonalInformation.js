@@ -5,6 +5,7 @@ import Form from './components/Form';
 import Input from './components/Input';
 import Submit from './components/Submit';
 import TextArea from './components/TextArea';
+import { LinkToJsonServer } from '../../Api/ConnectionToJsonServer';
 
 const PersonalInformation = () => {
     
@@ -23,7 +24,7 @@ const PersonalInformation = () => {
     });
     
     useEffect(() => {
-        fetch(`https://task-tracker-backend-master.herokuapp.com/personalInformation/${id}`)
+        fetch(`${LinkToJsonServer}personalInformation/${id}`)
             .then(res => res.json())
             .then(personal => {
                 setData(personal);
